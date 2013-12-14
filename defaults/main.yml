@@ -1,0 +1,39 @@
+---
+
+# Put your default configuration variables here.
+# Prefix each variable with your role's name for proper namespacing.
+
+
+# $role_version: 1.0
+
+# $role_configuration_dir: /etc/$role
+# $role_configuration_file: "{{$role_configuration_dir}}/main.conf"
+
+
+# Main configuration
+# -------------------
+
+# $role_setting: value
+# $role_setting: 'value'
+
+# $role_setting:
+#   - value
+#   - value
+
+# $role_setting_c:
+#   param: value
+#   param: value
+
+# $role_setting_c:
+#   - name: value
+#     type: value
+#   - name: value
+#     type: value
+
+
+# Optional extensions
+# -------------------
+
+# $role_capability: on
+# $role_capability_setting_a: value
+# $role_capability_setting_b: value

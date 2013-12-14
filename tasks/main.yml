@@ -1,0 +1,14 @@
+---
+
+# Specify your provisioning steps here.
+
+# - name: Preliminary task
+#   task: ...
+
+
+# Delegate further configuration to subtasks
+# placed in this same directory.
+
+# - include: install.yml
+# - include: configure.yml
+# - include: contrib.yml

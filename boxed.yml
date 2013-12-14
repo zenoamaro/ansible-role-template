@@ -21,5 +21,5 @@
     # custom_configuration: value
 
   roles:
-    # '.'    # The current directory itself is the role
+    - '.'    # The current directory itself is the role
 

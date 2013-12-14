@@ -26,5 +26,5 @@
       apt: update_cache=yes
 
   roles:
-    # '.'    # The current directory itself is the role
+    - '.'    # The current directory itself is the role
 

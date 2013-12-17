@@ -37,7 +37,7 @@ Usage
 
 Clone this repo into your roles directory:
 
-    $ git clone https://github.com/user/ansible-$role.git roles/$role
+    $ git clone https://github.com/$user/ansible-$role.git roles/$role
 
 And add it to your play's roles:
 

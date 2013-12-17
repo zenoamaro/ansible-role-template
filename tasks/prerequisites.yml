@@ -8,11 +8,13 @@
 #         with an easy_installed pip later on? Could we just assume
 #         that pip is installed and carry on?
 
-- name: Prerequisites for provisioning (setuptools and pydev)
+- name: Prerequisites for provisioning
   sudo: yes
   apt:
     name: "{{item}}"
   with_items:
+    - build-essential
+    - libcurl4-openssl-dev
     - python-setuptools
     - python-dev
   tags:
@@ -20,7 +22,7 @@
     - dev
     - deps
 
-- name: Prerequisites for provisioning (pip)
+- name: Prerequisites for provisioning
   sudo: yes
   easy_install:
     name: pip
@@ -28,18 +30,7 @@
     - python
     - deps
 
-- name: Prerequisites for provisioning (libcurl-dev)
-  sudo: yes
-  apt:
-    name: "{{item}}"
-  with_items:
-    - build-essential
-    - libcurl4-openssl-dev
-  tags:
-    - dev
-    - deps
-
-- name: Prerequisites for provisioning (pycurl)
+- name: Prerequisites for provisioning
   sudo: yes
   pip:
     name: pycurl

@@ -1,0 +1,16 @@
+---
+
+# Enter here the necessary steps to configure your role.
+
+# - name: Configure $ROLE
+#   sudo: yes
+#   template:
+#     src: "{{item}}"
+#     dest: ...
+#   with_items:
+#     - ...
+#   notify: restart $role
+#   tags:
+#     - conf
+#     - $role
+#     - $role_type

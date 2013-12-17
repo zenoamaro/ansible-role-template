@@ -1,0 +1,39 @@
+---
+
+# Enter here the necessary steps to deploy your role.
+
+# Targeting specific OSes or distributions:
+#
+#   - `ansible_system`               → Linux, BSD, ...
+#   - `ansible_os_family`            → Debian, RedHat, ...
+#   - `ansible_distribution`         → Debian, Ubuntu, RedHat, ...
+#   - `ansible_distribution_release` → precise, wheezy, ...
+#   - `ansible_pkg_mgr`              → apt, yum, ...
+
+# - name: Add official $distro repository
+#   when: ansible_distribution == '$distro'
+#   sudo: yes
+#   apt_repository:
+#     repo: "deb ... {{ansible_distribution_release}} $role"
+#   tags:
+#     - repo
+#     - $role
+#     - $role_type
+
+# - name: Update repository caches
+#   when: ansible_pkg_mgr == 'apt'
+#   sudo: yes
+#   apt: update_cache=yes
+#   tags:
+#     - repo
+#     - $role
+#     - $role_type
+
+# - name: Install $ROLE
+#   when: ansible_os_family == '$distro-family'
+#   sudo: yes
+#   apt: name=$role state=present
+#   tags:
+#     - deps
+#     - $role
+#     - $role_type

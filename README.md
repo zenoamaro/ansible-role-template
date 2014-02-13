@@ -31,6 +31,10 @@ Available extensions (under a switch):
 - Extension - `$role_extension`
 - ...
 
+Callable tasks:
+
+- `task`: ...
+
 
 Usage
 -----

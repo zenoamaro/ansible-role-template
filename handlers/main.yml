@@ -3,10 +3,10 @@
 # Specify here any handler you may have available to control your service.
 # http://www.ansibleworks.com/docs/playbooks.html#handlers-running-operations-on-change
 
-# - name: Restart $service
+# - name: restart $service
 #   sudo: yes
 #   service: name=$service state=restarted
 
-# - name: Reload $service
+# - name: reload $service
 #   sudo: yes
 #   service: name=$service state=reloaded

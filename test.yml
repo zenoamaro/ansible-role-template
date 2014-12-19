@@ -20,10 +20,10 @@
     # custom_configuration: value
 
   pre_tasks:
-    # Most vagrant boxes have outdated repositories
     - name: APT update
       sudo: yes
-      apt: update_cache=yes
+      when: ansible_os_family == 'Debian'
+      apt: update_cache=yes cache_valid_time=3600
 
   roles:
     - '.'    # The current directory itself is the role
